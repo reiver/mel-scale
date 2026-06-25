@@ -20,13 +20,120 @@
 		<hgroup>
 			<h1 property="headline">Mel Scale</h1>
 			<p>
-				an  audio frequency that mimics how the human ear perceives pitch
+				an audio frequency scale that tries to mimic how the human ear perceives pitch
 			</p>
 		</hgroup>
 		<p>
 			by <a href="https://reiver.link/">Charles Iliya Krempeaux</a>
 		</p>
 	</header>
+	<p>
+		The <strong>mel scale</strong> is used when creating a <a href="/mel-spectrogram/">mel spectrogram</a> from a regular <a href="/spectrogram/">Spectrogram</a>.
+	</p>
+	<section>
+		<h1>Alternatives</h1>
+		<p>
+			There are some alternatives to the <strong>mel scale</strong>.
+			These include:
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Scale Name
+					</th>
+					<th>
+						Type
+					</th>
+					<th>
+						Common Usages
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Mel
+					</td>
+					<td>
+						Perceived pitch
+					</td>
+					<td>
+						Speech recognition, MFCCs
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Bark
+					</td>
+					<td>
+						Critical bands
+					</td>
+					<td>
+						Psychoacoustics, audio coding
+					</td>
+				</tr>
+				<tr>
+					<td>
+						ERB
+					</td>
+					<td>
+						Auditory filter bandwidths
+					</td>
+					<td>
+						Hearing research, auditory models
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Greenwood
+					</td>
+					<td>
+						Cochlear anatomy
+					</td>
+					<td>
+						Cochlear modeling
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Log-frequency
+					</td>
+					<td>
+						Musical pitch
+					</td>
+					<td>
+						Music analysis
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Constant-Q
+					</td>
+					<td>
+						Musical intervals
+					</td>
+					<td>
+						MIR, transcription
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gammatone + ERB
+					</td>
+					<td>
+						Auditory physiology
+					</td>
+					<td>
+						Bio-inspired audio processing
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			For <strong>speech recognition</strong>, <strong>machine learning</strong> and <strong><abbr title="artificial intelligence">AI</abbr></strong>, from a practical point of view the most common alternatives to <strong>mel scale filterbanks</strong> are <strong>gammatone + ERB filterbanks</strong>, <strong>bark-scale filterbanks</strong>, and sometimes learned filterbanks where an <strong>artificial neural network</strong> discovers its own frequency representation directly from audio.
+		</p>
+	</section>
 	<section>
 		<h1>See Also</h1>
 		<ul>
