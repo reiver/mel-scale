@@ -31,6 +31,34 @@
 		The <strong>mel scale</strong> is used when creating a <a href="/mel-spectrogram/">mel spectrogram</a> from a regular <a href="/spectrogram/">Spectrogram</a>.
 	</p>
 	<section>
+		<h1>Conversion Formulas</h1>
+		<p>
+			The formula to convert between physical frequency in hertz (<abbr title="hertz">Hz</abbr>) to <strong>mel scale</strong> is:
+		</p>
+		<figure>
+			<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				<mi>mel_scale</mi>
+				<mo>=</mo>
+				<mn>2595</mn>
+				<mo>⋅</mo>
+				<msub>
+					<mi>log</mi>
+					<mn>10</mn>
+				</msub>
+				<mrow>
+					<mo>(</mo>
+					<mn>1</mn>
+					<mo>+</mo>
+					<mfrac>
+						<mi>frequest</mi>
+						<mn>700</mn>
+					</mfrac>
+					<mo>)</mo>
+				</mrow>
+			</math>
+		</figure>
+	</section>
+	<section>
 		<h1>Alternatives</h1>
 		<p>
 			There are some alternatives to the <strong>mel scale</strong>.
