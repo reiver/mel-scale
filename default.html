@@ -33,7 +33,7 @@
 	<section>
 		<h1>Conversion Formulas</h1>
 		<p>
-			The formula to convert between physical frequency in hertz (<abbr title="hertz">Hz</abbr>) to <strong>mel scale</strong> is:
+			The formula to convert from physical frequency in hertz (<abbr title="hertz">Hz</abbr>) to <strong>mel scale</strong> is:
 		</p>
 		<figure>
 			<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -50,9 +50,33 @@
 					<mn>1</mn>
 					<mo>+</mo>
 					<mfrac>
-						<mi>frequest</mi>
+						<mi>frequecy</mi>
 						<mn>700</mn>
 					</mfrac>
+					<mo>)</mo>
+				</mrow>
+			</math>
+		</figure>
+		<p>
+			The formula to convert from <strong>mel scale</strong> to physical frequency in hertz (<abbr title="hertz">Hz</abbr>) is:
+		</p>
+		<figure>
+			<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				<mi>frequecy</mi>
+				<mo>=</mo>
+				<mn>700</mn>
+				<mo>×</mo>
+				<mrow>
+					<mo>(</mo>
+					<msup>
+						<mn>10</mn>
+						<mfrac>
+							<mi>mel_scale</mi>
+							<mn>2595</mn>
+						</mfrac>
+					</msup>
+					<mo>−</mo>
+					<mn>1</mn>
 					<mo>)</mo>
 				</mrow>
 			</math>
